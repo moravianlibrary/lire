@@ -32,7 +32,7 @@
   ~ URL: http://www.morganclaypool.com/doi/abs/10.2200/S00468ED1V01Y201301ICR025
   ~
   ~ Copyright statement:
-  ~ --------------------
+  ~
   ~ (c) 2002-2013 by Mathias Lux (mathias@juggle.at)
   ~     http://www.semanticmetadata.net/lire, http://www.lire-project.net
   -->
@@ -81,30 +81,43 @@
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-core</artifactId>
-			<version>4.2.0</version>
+			<version>4.10.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-queryparser</artifactId>
-			<version>4.2.0</version>
+			<version>4.10.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-analyzers-common</artifactId>
-			<version>4.2.0</version>
+			<version>4.10.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-math3</artifactId>
-			<version>3.1.1</version>
+			<version>3.3</version>
 		</dependency>
 		<dependency>
 			<groupId>com.stromberglabs</groupId>
 			<artifactId>jopensurf</artifactId>
 			<version>1.0.0</version>
 			<scope>system</scope>
-			<systemPath>${basedir}/lib/JOpenSurf.jar</systemPath>
+			<systemPath>${basedir}/lib/jopensurf.jar</systemPath>
 		</dependency>
+                <dependency>
+                    <groupId>org.opencv</groupId>
+                    <artifactId>opencv</artifactId>
+                    <version>2.4.9</version>
+                    <scope>system</scope>
+                    <systemPath>${basedir}/lib/opencv-249.jar</systemPath>
+                </dependency>
+	 <dependency>
+	  <groupId>org.jwall</groupId>
+	  <artifactId>stream-analysis</artifactId>
+	  <version>0.9.5-SNAPSHOT</version>
+	  <type>jar</type>
+	 </dependency>
 	</dependencies>
 
 	<build>

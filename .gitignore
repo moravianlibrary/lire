@@ -29,6 +29,10 @@ bin-test/*
 docs/*
 .flexLibProperties
 
+# IntelliJ Idea noise
+.idea
+*.iml
+
 # Maven noise
 target/*
 

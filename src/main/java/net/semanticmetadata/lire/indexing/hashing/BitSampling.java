@@ -66,7 +66,7 @@ public class BitSampling {
 
 
     // Dimensions should cover the maximum dimensions of descriptors used with bit sampling
-    public static int dimensions = 640;
+    public static int dimensions = 3100;
 
     public static final String hashFunctionsFileName = "LshBitSampling.obj";
     private static double[][][] hashes = null;
@@ -145,7 +145,7 @@ public class BitSampling {
      * @throws IOException
      */
     public static double[][][] readHashFunctions() throws IOException {
-        ObjectInputStream ois = new ObjectInputStream(new GZIPInputStream(BitSampling.class.getResourceAsStream(hashFunctionsFileName)));
+        ObjectInputStream ois = new ObjectInputStream(new GZIPInputStream(BitSampling.class.getResourceAsStream("/" + hashFunctionsFileName)));
         int bits = ois.readInt();
         int dimensions = ois.readInt();
         int numFunctionBundles = ois.readInt();
